@@ -11,13 +11,13 @@
   package com.mycompany.crochetproject1;
 
 
-public class RumusCrochet {
+  public class RumusCrochet {
 
 
-String namaStitch;
-String singkatan;
-String arti;
-String deskripsi;
+private String namaStitch;
+private String singkatan;
+private String arti;
+private String deskripsi;
 
 public RumusCrochet(String namaStitch, String singkatan,
                     String arti, String deskripsi) {
@@ -28,6 +28,36 @@ public RumusCrochet(String namaStitch, String singkatan,
     this.deskripsi = deskripsi;
 }
 
+public String getNamaStitch(){
+    return namaStitch;
+}
+public String getSingkatan(){
+    return singkatan;
+}
+public String getArti(){
+    return arti;
+}
+public String getDeskripsi(){
+    return deskripsi;
+}
+
+public void setNamaStitch(String namaStitch){
+    this.namaStitch = namaStitch;
+}
+public void setSingkatan(String singkatan){
+    if(singkatan == null || singkatan.isEmpty()){
+        System.out.println("Singkatan tidak boleh kosong!");
+    }else{
+        this.singkatan = singkatan;
+    }
+}
+
+public void setArti(String arti){
+    this.arti = arti;
+}
+public void setDeskripsi(String deskripsi){
+    this.deskripsi = deskripsi;
+}
 public void tampilkanInfo() {
 
     System.out.println("================================");
