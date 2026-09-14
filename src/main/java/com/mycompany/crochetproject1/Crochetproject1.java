@@ -54,5 +54,20 @@ public static void main(String[] args) {
     hdc.tampilkanInfo();
     dc.tampilkanInfo();
     slst.tampilkanInfo();
+    
+    System.out.println("=== SIMULASI GETTER ===");
+    System.out.println("Nama stitch : " + sc.getNamaStitch());
+    System.out.println("Singkatan   : " + sc.getSingkatan());
+
+    
+    System.out.println();
+    System.out.println("=== SETTER DATA VALID ===");
+    sc.setSingkatan("SINGLE");
+    System.out.println("Singkatan setelah diubah : " + sc.getSingkatan());
+
+    System.out.println();
+    System.out.println("=== SETTER DATA TIDAK VALID ===");
+    sc.setSingkatan("");
+    System.out.println("Singkatan setelah data tidak valid : " + sc.getSingkatan());
 }
 }
